@@ -7,6 +7,8 @@ public class FizzBuzz {
     public String countOff(int order) {
         if(order%(3*5*7) == 0){
             return "FizzBuzzWhizz";
+        }else if(order%(3*5) == 0){
+            return "FizzBuzz";
         }
         return String.valueOf(order);
     }
