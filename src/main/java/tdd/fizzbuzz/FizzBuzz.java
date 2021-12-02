@@ -11,6 +11,8 @@ public class FizzBuzz {
             return "FizzBuzz";
         }else if(order%(3*7) == 0){
             return "FizzWhizz";
+        }else if(order%(5*7) == 0){
+            return "BuzzWhizz";
         }
         return String.valueOf(order);
     }
