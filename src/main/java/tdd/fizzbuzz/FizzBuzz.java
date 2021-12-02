@@ -13,6 +13,8 @@ public class FizzBuzz {
             return "FizzWhizz";
         }else if(order%(5*7) == 0){
             return "BuzzWhizz";
+        }else if(order%3 == 0){
+            return "Fizz";
         }
         return String.valueOf(order);
     }
