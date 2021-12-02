@@ -10,8 +10,19 @@ public class FizzBuzzTest {
         int order = 1;
         //when
         FizzBuzz fizzBuzz = new FizzBuzz();
-        String result = fizzBuzz.countOff(order);
+        String actual = fizzBuzz.countOff(order);
         //then
-        assertEquals("1", result);
+        assertEquals("1", actual);
+    }
+
+    @Test
+    void should_return_FizzBuzzWhizz_when_countoff_given_order_number_multiple_of_3_5_7() {
+        //given
+        int order = 105;
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String actual = fizzBuzz.countOff(order);
+        //then
+        assertEquals("FizzBuzzWhizz", actual);
     }
 }
